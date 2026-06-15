@@ -1,0 +1,406 @@
+1. What is Bash Scripting
+
+Bash scripting is writing multiple Linux commands inside a file and executing them automatically.
+
+Instead of typing commands one by one, we write them once in a script file and run them whenever needed.
+
+It is mainly used for:
+
+Automation
+Saving time
+Reducing manual errors
+Managing Linux servers efficiently
+2. What is Kernel
+
+Kernel is the core part of the operating system.
+
+It acts as a bridge between hardware and software.
+
+It receives instructions from the shell and communicates with hardware to perform tasks.
+
+Examples of hardware:
+
+CPU
+Memory
+Disk
+Network devices
+
+Kernel manages:
+
+Process execution
+Memory allocation
+Device communication
+Resource management
+3. Flow of Execution
+
+The system works like this:
+
+User → Application → Shell → Kernel → Hardware
+
+Explanation:
+
+User
+
+Gives instruction
+
+↓
+
+Application
+
+Accepts request
+
+↓
+
+Shell
+
+Converts command into system request
+
+↓
+
+Kernel
+
+Processes request
+
+↓
+
+Hardware
+
+Executes operation
+
+4. What is Shell
+
+Shell is an interface between user and kernel.
+
+It accepts commands from user and passes them to kernel.
+
+Two types:
+
+CLI Shell
+
+Command Line Interface
+
+Examples:
+
+Bash
+sh
+ksh
+
+Used by typing commands.
+
+GUI Shell
+
+Graphical User Interface
+
+Examples:
+
+GNOME
+KDE
+
+Used through graphical desktop.
+
+5. Types of Shells
+sh
+
+Original Bourne Shell
+
+Basic shell
+
+bash
+
+Bourne Again Shell
+
+Improved version of sh
+
+Most widely used
+
+csh
+
+C Shell
+
+Similar to C language
+
+tcsh
+
+Advanced c shell
+
+ksh
+
+Korn Shell
+
+Powerful scripting shell
+
+GNOME
+
+Linux graphical desktop
+
+KDE
+
+Another graphical desktop environment
+
+6. How Script Runs
+
+When script is executed:
+
+Shell reads script line by line
+Sends instructions to kernel
+Kernel executes through hardware
+Output is displayed
+
+Execution always happens top to bottom
+
+This is called sequential execution.
+
+7. Script Standards
+
+Professional scripts must follow rules:
+
+Meaningful file names
+
+Example:
+
+backup.sh
+
+This tells script purpose clearly.
+
+Store scripts in one directory
+
+Helps organization
+
+Use proper extension
+
+Examples:
+
+.sh
+.bash
+Executable permission required
+
+Without execute permission script cannot run.
+
+8. Script Format
+
+A proper script contains:
+
+Shebang
+
+Defines shell
+
+Tells system which interpreter to use.
+
+Comments
+
+Used to explain script purpose
+
+Helps readability
+
+Variables
+
+Store values for later use
+
+Makes script dynamic
+
+Commands
+
+Actual operations to execute
+
+Examples:
+
+List files
+Copy files
+Display output
+Statements
+
+Used for logic control
+
+Examples:
+
+if
+for
+while
+case
+9. Variables
+
+Variables store data temporarily.
+
+Examples:
+
+Name
+Numbers
+Date
+Command output
+
+Used to reuse values without rewriting.
+
+10. Input and Output
+Input
+
+User enters value
+
+Script stores it
+
+Output
+
+Script displays result
+
+This makes scripts interactive.
+
+11. If-Else Statement
+
+Used for decision making.
+
+Logic:
+
+If condition is true → execute one block
+
+Otherwise → execute another block
+
+Examples:
+
+Check file exists
+Compare numbers
+Validate service status
+12. Case Statement
+
+Used when multiple options exist.
+
+Instead of writing many if statements, case selects action based on user choice.
+
+Useful for menus.
+
+Example:
+
+Choose:
+
+Show date
+Show files
+Show uptime
+
+Based on selection, matching action executes.
+
+13. For Loop
+
+Repeats task fixed number of times.
+
+Example:
+
+Repeat message 5 times
+
+OR
+
+Repeat for list items:
+
+eat
+run
+jump
+play
+
+Loop stops after all iterations finish.
+
+14. While Loop
+
+Runs repeatedly while condition remains true.
+
+Used for continuous tasks.
+
+Example:
+
+Countdown timer
+
+The loop keeps running until condition becomes false.
+
+Then stops automatically.
+
+15. Exit Status
+
+Every Linux command returns status after execution.
+
+0
+
+Success
+
+Command worked
+
+1
+
+Minor issue
+
+2
+
+Serious problem
+
+3–255
+
+Other errors
+
+Why important:
+
+Scripts check success or failure using exit status.
+
+If success → continue
+
+If failure → perform alternate action
+
+This is important in automation.
+
+16. Why Exit Status is Used
+
+Used for checking command result.
+
+Example:
+
+If file check successful → continue
+
+Else → show error
+
+Helps scripts make smart decisions.
+
+17. Cron Jobs
+
+Cron is used to run scripts automatically at scheduled time.
+
+No manual execution needed.
+
+Examples:
+
+Daily backup
+Cleanup logs
+Restart services
+Generate reports
+
+Used heavily in production automation.
+
+18. Real-Time Industry Use
+
+Bash scripting is used by:
+
+Cloud Engineers
+DevOps Engineers
+Linux Admins
+Automation Engineers
+
+Used for:
+
+Server setup
+Application deployment
+Backup automation
+Monitoring services
+Log cleanup
+Software installation
+19. Why Bash is Important
+
+Most servers run Linux.
+
+Bash helps automate tasks quickly.
+
+It is essential for:
+
+Cloud
+DevOps
+Linux administration
+Infrastructure automation
+20. Final Simple Definition
+
+Bash scripting means:
+
+Writing Linux commands inside a file to automate tasks automatically.
+
+That’s your full review explanation. You can confidently present this today ✅

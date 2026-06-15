@@ -1,0 +1,155 @@
+1-linux
+2-Git
+3-Github
+4-jenkins
+5-maven
+6-sonarqube
+7-nexus
+8-ansible
+9-docker
+10-terraform
+11-kubernetes
+12-aws cloud
+-------------
+Devops- development & operations
+release-releasing new version and fixing bugs 
+We are part of operations
+- ops- work on releasing new version to the market
+-water model- step by step manner       
+1-Requirement analysis
+2-design
+3-development
+4-testing
+5-maintenance-operation team takes place
+-
+because of loophole created agile method
+---
+AGILE METHOD-
+CLIENT sent requirement TO programmer
+basic prototype to client
+client provides feedback and list changes is made
+entire process broke into pieces/sprints-2 weeks of duration
+*4 diff stages in sprints.
+changes will be into sprint 2 
+--
+product back log->sprint planning->sprint backlog->Plan->delive->prdrv                              
+                Code  product
+               Test
+
+                review
+                 >sprint
+
+                 <>Daily scrum
+---------
+
+adv-1-fast delivery
+    2-client better undertsanding
+dis adv-prodct gets tested under developer compute and not on production system
+-their no communication b/w development tem and operation team
+-----------
+To overcome issue implemented DEVOPS
+- DEVOPS is an evolution from agile method of software development
+
+-devops addressing btw devoplers and operations
+-operations team will send feedback to developers for better understanding
+-software deve-8 phases
+1-dev-plan code build test
+2-operation team- integrate  deploy operate  monitor
+--GIT is used to store the code
+------------
+INTEGRATE-use Jenkins
+-----------------------
+1-Client srever architecture:
+Client: Which request a resource
+server-which respond to the request
+
+1-tier architectuer
+2-tier architectuer
+3-tier architectuer
+N-tier architectuer
+
+--Types of environments:
+3-types
+1-development
+2-staging environment
+3-production-Live environment
+
+-----
+
+#---------------------------------------------------------------------
+# Example configuration for a possible web application.  See the
+# full configuration options online.
+#
+#   https://www.haproxy.org/download/1.8/doc/configuration.txt
+#
+#---------------------------------------------------------------------
+
+#---------------------------------------------------------------------
+# Global settings
+#---------------------------------------------------------------------
+global
+    # to have these messages end up in /var/log/haproxy.log you will
+    # need to:
+    #
+    # 1) configure syslog to accept network log events.  This is done
+    #    by adding the '-r' option to the SYSLOGD_OPTIONS in
+    #    /etc/sysconfig/syslog
+    #
+    # 2) configure local2 events to go to the /var/log/haproxy.log
+    #   file. A line like the following can be added to
+    #   /etc/sysconfig/syslog
+    #
+    #    local2.*                       /var/log/haproxy.log
+    #
+    log         127.0.0.1 local2
+
+    chroot      /var/lib/haproxy
+    pidfile     /var/run/haproxy.pid
+    maxconn     4000
+    user        haproxy
+    group       haproxy
+    daemon
+
+    # turn on stats unix socket
+    stats socket /var/lib/haproxy/stats
+
+    # utilize system-wide crypto-policies
+    ssl-default-bind-ciphers PROFILE=SYSTEM
+    ssl-default-server-ciphers PROFILE=SYSTEM
+
+#---------------------------------------------------------------------
+# common defaults that all the 'listen' and 'backend' sections will
+# use if not designated in their block
+#---------------------------------------------------------------------
+defaults
+    mode                    http
+    log                     global
+    option                  httplog
+    option                  dontlognull
+    option http-server-close
+    option forwardfor       except 127.0.0.0/8
+    option                  redispatch
+    retries                 3
+    timeout http-request    10s
+    timeout queue           1m
+    timeout connect         10s
+    timeout client          1m
+    timeout server          1m
+    timeout http-keep-alive 10s
+    timeout check           10s
+    maxconn                 3000
+
+#---------------------------------------------------------------------
+                                                                          4
+
+
+
+
+
+
+
+
+
+
+
+
